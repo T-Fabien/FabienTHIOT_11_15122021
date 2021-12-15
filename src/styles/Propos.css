@@ -1,0 +1,10 @@
+.accordion__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.accordion__item{
+    width: 90%;
+    padding: 15px 5%;
+}

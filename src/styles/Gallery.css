@@ -1,0 +1,101 @@
+.gallery{
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    margin-top: 2em;
+    padding: 2em;
+
+    display: grid;
+    grid-gap: 40px 0px;
+    grid-template-columns: repeat(3, minmax(340px, 340px));
+    grid-template-rows: auto;
+    justify-content: space-between;
+    justify-items: center;
+    position: relative;
+}
+
+.gallery__card {
+    background: linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgba(130,50,50, 1) 100%);
+    border-radius: 10px;
+    color: white;
+    height: 340px;
+    width: 340px;
+}
+
+.gallery__card a{
+    text-decoration: none;
+}
+
+.gallery__card img{
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.gallery__card h2{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 1em;
+    position: relative;
+    text-decoration: none;
+    top: -70px;
+}
+
+@media (min-width: 900px) and (max-width: 1250px) {
+    .gallery{
+        display: grid;
+        grid-gap: 40px 0px;
+        grid-template-columns: repeat(2, minmax(340px, 340px));
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 900px) {
+    .gallery{
+        display: grid;
+        grid-gap: 40px 0px;
+        grid-template-columns: repeat(2, minmax(280px, 280px));
+        justify-content: space-between;
+    }
+    .gallery__card {
+        background: linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgba(130,50,50, 1) 100%);
+        border-radius: 10px;
+        color: white;
+        height: 280px;
+        width: 280px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 720px) {
+    .gallery{
+        display: grid;
+        grid-gap: 40px 0px;
+        grid-template-columns: repeat(1, minmax(340px, 340px));
+        justify-content: center;
+    }
+    .gallery__card {
+        background: linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgba(130,50,50, 1) 100%);
+        border-radius: 10px;
+        color: white;
+        height: 340px;
+        width: 340px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery{
+        display: grid;
+        grid-gap: 40px 0px;
+        grid-template-columns: repeat(1, minmax(340px, 340px));
+        justify-content: center;
+    }
+    .gallery__card {
+        background: linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgba(130,50,50, 1) 100%);
+        border-radius: 10px;
+        color: white;
+        height: 320px;
+        width: 320px;
+    }
+}
+

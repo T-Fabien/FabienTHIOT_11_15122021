@@ -1,0 +1,17 @@
+.logement__host {
+  align-items: center;
+  color: #ff6060;
+  display: flex;
+}
+
+.logement__host__name h2 {
+  font-size: 18px;
+  margin: 0;
+  text-align: right;
+}
+
+.logement__host img {
+  border-radius: 50%;
+  margin-left: 20px;
+  width: 64px;
+}

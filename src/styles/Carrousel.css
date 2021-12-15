@@ -1,0 +1,83 @@
+.carrousel {
+  align-items: center;
+  display: flex;
+  height: 420px;
+  justify-content: center;
+  padding: 20px 0;
+  position: relative;
+}
+.image {
+  border-radius: 10px;
+  height: 420px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.right-arrow {
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  position: absolute;
+  right: 32px;
+  user-select: none;
+  z-index: 10;
+}
+
+.left-arrow {
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  left: 32px;
+  position: absolute;
+  user-select: none;
+  z-index: 10;
+}
+
+.left-arrow, .right-arrow{
+    height: 200px;
+    width: 80px;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  width: 92%;
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+  .carrousel {
+    height: 300px;
+  }
+  .image {
+    height: 300px;
+  }
+  .left-arrow, .right-arrow{
+      height: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+    .carrousel {
+      height: 255px;
+    }
+    .image {
+      height: 255px;
+    }
+
+    .left-arrow{
+        left: 0px;
+    }
+
+    .right-arrow{
+        right: 0px;
+    }
+    .left-arrow, .right-arrow{
+        height: 40px;
+    }
+  }

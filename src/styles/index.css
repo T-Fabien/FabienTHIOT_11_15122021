@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url(../assets/Montserrat-Regular.ttf) format("truetype");
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Montserrat";
+  min-height: 100vh;
+  margin: 0;
+}
+
+#root .header,
+#root .main{
+  margin: 0 5%;
+  padding-bottom: 20px;
+}
+
+#root .main {
+    min-height: calc(100vh - 230px);
+}
