@@ -10,8 +10,9 @@ class Stars extends React.Component {
     return [...Array(5).keys()].map((index) => {
       if (index + 1 <= this.state.currRating) {
         return (
-            <svg
-            class="svg-inline--fa fa-star fa-w-18"
+          <svg
+            key={index}
+            className="svg-inline--fa fa-star fa-w-18"
             height={this.props.height}
             width={this.props.width}
             xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +28,8 @@ class Stars extends React.Component {
       }
       return (
         <svg
-          class="svg-inline--fa fa-star fa-w-18"
+          className="svg-inline--fa fa-star fa-w-18"
+          key={index}
           height={this.props.height}
           width={this.props.width}
           xmlns="http://www.w3.org/2000/svg"

@@ -9,9 +9,7 @@ import "../../styles/Carrousel.css";
 class LogementInfo extends React.Component {
   render() {
     let id = this.props.id;
-    for (let i = 1; i < data[id].rating; i++) {
-      const element = 1;
-    }
+
     return (
       <div className="logement__info">
         <div className="logement__globalinfo">
@@ -28,7 +26,7 @@ class LogementInfo extends React.Component {
           <HostInfo id={id} />
 
           <div className="logement__ratings">
-            <Stars count={3} width="30px" height="30px" />
+            <Stars count={data[id].rating} width="30px" height="30px" />
           </div>
         </div>
       </div>

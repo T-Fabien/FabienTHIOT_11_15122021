@@ -95,6 +95,10 @@
 }
 
 @media (max-width: 480px) {
+
+  .main{
+    min-height: 100% !important;
+  }
   .logement__info {
     flex-direction: column;
   }
@@ -105,6 +109,10 @@
   .logement__localisation {
     font-size: 14px;
     padding-top: 5px;
+  }
+
+  .logement__tags {
+    flex-wrap: wrap;
   }
 
   .logement__tags p {

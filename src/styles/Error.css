@@ -47,6 +47,9 @@
 }
 
 @media (max-width: 480px) {
+    .error{
+        min-height: calc(100vh - 60px - 228px);
+    }
     .error__404{
         font-size: 96px;
     }
@@ -57,6 +60,7 @@
     }
     .error a{
         font-size: 14px;
+        margin-bottom: 80px;
     }
 }
 

@@ -10,7 +10,6 @@ import "../../styles/Logement.css";
 class Logement extends React.Component {
   render() {
     let id = window.location.pathname.substring(10);
-
     return (
       <div className="main">
         <section className="logement__section">

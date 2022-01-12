@@ -32,6 +32,7 @@ class Carrousel extends React.Component {
   }
 
   render() {
+    let image_alt ;
     return (
       <section className="carrousel">
         <svg
@@ -57,10 +58,11 @@ class Carrousel extends React.Component {
           ></path>
         </svg>
         {data[this.props.id].pictures.map((slide, index) => {
+          image_alt = "image de " + data[this.props.id].title
           return (
             <div className={index === this.state.current ? "slide active" : "slide"} key={index}>
               {index === this.state.current && (
-                <img src={slide} alt="travel image" className="image" />
+                <img src={slide} alt={image_alt} className="image" />
               )}
             </div>
           );

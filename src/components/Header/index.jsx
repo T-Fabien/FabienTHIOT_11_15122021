@@ -8,12 +8,12 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <img src={logo} alt="" />
+        <img src={logo} alt="Logo de Kasa" />
         <nav className="navbar">
-          <NavLink to="/" exact className="link">
+          <NavLink to="/" end className="link">
             Accueil
           </NavLink>
-          <NavLink to="/A_propos" exact className="link">
+          <NavLink to="/A_propos" end className="link">
             A Propos
           </NavLink>
         </nav>
